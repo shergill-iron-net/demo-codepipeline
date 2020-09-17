@@ -27,7 +27,7 @@ resource "aws_codebuild_project" "service-build" {
 
   source {
     type            = "GITHUB"
-    location        = "https://github.com/shergill-iron-net/code-pipeline-demo"
+    location        = "https://github.com/shergill-iron-net/demo-codepipeline"
     git_clone_depth = 1
     buildspec       = "buildspec/build.yml"
   }
@@ -83,7 +83,7 @@ resource "aws_codebuild_project" "service-test" {
 
   source {
     type            = "GITHUB"
-    location        = "https://github.com/shergill-iron-net/code-pipeline-demo"
+    location        = "https://github.com/shergill-iron-net/demo-codepipeline"
     git_clone_depth = 1
     buildspec       = "buildspec/test.yml"
   }
@@ -140,7 +140,7 @@ resource "aws_codebuild_project" "service-deploy" {
 
   source {
     type            = "GITHUB"
-    location        = "https://github.com/shergill-iron-net/code-pipeline-demo"
+    location        = "https://github.com/shergill-iron-net/demo-codepipeline"
     git_clone_depth = 1
     buildspec       = "buildspec/deploy.yml"
   }

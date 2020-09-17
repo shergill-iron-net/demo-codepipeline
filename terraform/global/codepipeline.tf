@@ -20,7 +20,7 @@ resource "aws_codepipeline" "codepipeline" {
 
       configuration = {
         Owner                = "shergill-iron-net"
-        Repo                 = "code-pipeline-demo"
+        Repo                 = "demo-codepipeline"
         Branch               = "master"
         PollForSourceChanges = false
         OAuthToken           = ""
