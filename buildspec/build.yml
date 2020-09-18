@@ -9,7 +9,7 @@ phases:
     commands:
       - cd buildspec
       - ls -altR
-      - chmod +x buildspec/build.sh && ./build.sh
+      - chmod +x build.sh && ./build.sh
 
 artifacts:
   files: '**/*'
