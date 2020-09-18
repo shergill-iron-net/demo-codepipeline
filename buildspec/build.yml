@@ -10,6 +10,7 @@ phases:
       - cd buildspec
       - ls -altR
       - chmod +x build.sh && ./build.sh
+      - ls -altR
 
 artifacts:
   files: '**/*'
